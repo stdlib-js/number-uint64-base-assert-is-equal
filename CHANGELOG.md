@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-05)
+## Unreleased (2026-07-19)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`9600b95`](https://github.com/stdlib-js/stdlib/commit/9600b95f4b3c9350e1c15103da095b6492c0dc7f) - **refactor:** use a single workspace array _(by Athan Reines)_
 -   [`46fd304`](https://github.com/stdlib-js/stdlib/commit/46fd304d00ac69f1fb6bb3eaa8965022724aa247) - **chore:** follow-up fixes for recent commits [(#12933)](https://github.com/stdlib-js/stdlib/pull/12933) _(by Philipp Burckhardt)_
 -   [`dee3dfa`](https://github.com/stdlib-js/stdlib/commit/dee3dfae240c5def654c4564942f706c5c63657b) - **feat:** add `uint64/base/assert/is-equal` [(#12508)](https://github.com/stdlib-js/stdlib/pull/12508) _(by Abdul Kaium, Athan Reines)_
 
