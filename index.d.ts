@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2026 The Stdlib Authors.
@@ -16,26 +16,18 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
-var toWords = require( '@stdlib/number-uint64-base-to-words' ).assign;
-
-
-// VARIABLES //
-
-var WORKSPACE = [ 0, 0, 0, 0 ];
-
-
-// MAIN //
+import { Uint64 } from '@stdlib/types/number';
 
 /**
 * Tests whether two 64-bit unsigned integers are equal.
 *
-* @param {Uint64} a - first 64-bit unsigned integer
-* @param {Uint64} b - second 64-bit unsigned integer
-* @returns {boolean} result
+* @param a - first 64-bit unsigned integer
+* @param b - second 64-bit unsigned integer
+* @returns boolean indicating if both 64-bit unsigned integers are equal
 *
 * @example
 * var Uint64 = require( '@stdlib/number-uint64-ctor' );
@@ -46,16 +38,9 @@ var WORKSPACE = [ 0, 0, 0, 0 ];
 * var v = isEqual( a, b );
 * // returns true
 */
-function isEqual( a, b ) {
-	toWords( a, WORKSPACE, 1, 0 );
-	toWords( b, WORKSPACE, 1, 2 );
-	return (
-		WORKSPACE[ 0 ] === WORKSPACE[ 2 ] && // high words
-		WORKSPACE[ 1 ] === WORKSPACE[ 3 ]    // low words
-	);
-}
+declare function isEqual( a: Uint64, b: Uint64 ): boolean;
 
 
 // EXPORTS //
 
-module.exports = isEqual;
+export = isEqual;
