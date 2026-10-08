@@ -38,7 +38,8 @@
   },
   "dependencies": {
     "@stdlib/number-uint64-base-to-words": "github:stdlib-js/number-uint64-base-to-words#main",
-    "@stdlib/types": "^0.5.1"
+    "@stdlib/types": "^0.5.1",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3"
   },
   "devDependencies": {
     "@stdlib/assert-has-bigint-support": "^0.2.3",
